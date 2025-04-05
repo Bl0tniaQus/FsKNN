@@ -1,6 +1,4 @@
 open System
-printfn "f#"
-
 let euclidean_dist ((A,B): double list * double list)=
     (List.fold (fun acc (x1: double,x2: double) -> acc + ((x1-x2)**2)) 0.0 (List.zip A B))**0.5
 let accuracy_score ((T,Y): double list * double list)=
